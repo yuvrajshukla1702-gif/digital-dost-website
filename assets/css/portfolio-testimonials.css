@@ -1,0 +1,262 @@
+/* Portfolio + Reviews — matches Digital Dost theme fonts & colors */
+
+/* Use same font as rest of site */
+.dd-portfolio-section,
+.dd-reviews-section {
+  padding: 80px 0;
+  font-family: "Rubik", sans-serif;
+}
+
+/* Section badge — same pill style as "Our Services" */
+.dd-section-badge {
+  text-align: center;
+  width: auto;
+  max-width: none;
+}
+
+.dd-section-badge > .elementor-widget-container {
+  display: inline-block;
+  margin: -30px 0 0;
+  padding: 8px 16px;
+  background: var(--e-global-color-uicore_white, #fff);
+  border-radius: 100px;
+  box-shadow: 0 16px 24px -2px rgba(16, 24, 40, 0.1);
+}
+
+/* Spacer between badge and title */
+.dd-section-spacer .elementor-spacer-inner {
+  height: 40px;
+}
+
+/* Section main title — centered like other sections */
+.dd-portfolio-section .elementor-widget__width-initial,
+.dd-reviews-section .elementor-widget__width-initial {
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 48px;
+}
+
+/* ---------- Portfolio ---------- */
+.dd-portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.dd-portfolio-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dd-portfolio-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(121, 74, 255, 0.15);
+}
+
+.dd-portfolio-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.dd-portfolio-card .card-body {
+  padding: 24px;
+}
+
+/* Match service box title style */
+.dd-portfolio-card .card-title {
+  margin: 0 0 8px;
+  color: var(--e-global-color-uicore_headline, #1d1d2f);
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: 1.3;
+}
+
+/* Match service box description — 16px */
+.dd-portfolio-card .desc {
+  margin: 0 0 12px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--e-global-color-uicore_body, #60667a);
+}
+
+.dd-portfolio-card .tech {
+  margin: 0 0 12px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--e-global-color-uicore_primary, #794aff);
+}
+
+.dd-portfolio-card ul {
+  margin: 0 0 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.dd-portfolio-card ul li {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--e-global-color-uicore_body, #44495b);
+  padding: 2px 0 2px 16px;
+  position: relative;
+}
+
+.dd-portfolio-card ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--e-global-color-uicore_primary, #794aff);
+}
+
+.dd-portfolio-card .btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.dd-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 100px;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: inherit;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.dd-btn-fill {
+  background: var(--e-global-color-uicore_primary, #794aff);
+  color: #fff;
+}
+
+.dd-btn-fill:hover {
+  background: #6638e8;
+  color: #fff;
+}
+
+.dd-btn-outline {
+  background: #fff;
+  color: var(--e-global-color-uicore_primary, #794aff);
+  border: 1px solid #794aff54;
+}
+
+.dd-btn-outline:hover {
+  background: var(--e-global-color-uicore_primary, #794aff);
+  color: #fff;
+}
+
+/* ---------- Reviews ---------- */
+.dd-reviews-section {
+  background: linear-gradient(180deg, #fff 0%, var(--e-global-color-uicore_light, #f8f6ff) 100%);
+}
+
+.dd-reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  align-items: stretch;
+}
+
+.dd-review-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #fff;
+  border: 1px solid #e7e0ff;
+  border-radius: 16px;
+  padding: 28px 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dd-review-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 36px rgba(121, 74, 255, 0.12);
+}
+
+.dd-review-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  min-height: 48px;
+}
+
+.dd-review-top img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.dd-review-top div {
+  min-width: 0;
+}
+
+/* Match old testimonial name — 16px */
+.dd-review-top .review-name {
+  margin: 0;
+  font-size: 16px;
+  font-weight: inherit;
+  color: var(--e-global-color-uicore_headline, #1d1d2f);
+  line-height: 1.3;
+}
+
+/* Match old testimonial role — 14px */
+.dd-review-top .review-role {
+  margin: 4px 0 0;
+  font-size: 14px;
+  font-weight: inherit;
+  color: var(--e-global-color-uicore_body, #7a7f93);
+  line-height: 1.4;
+}
+
+.dd-stars {
+  color: #f5a623;
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+  line-height: 1;
+}
+
+/* Match site body text style */
+.dd-review-card .quote {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: var(--e-global-color-uicore_headline, #44495b);
+  flex: 1;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1024px) {
+  .dd-portfolio-grid,
+  .dd-reviews-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .dd-portfolio-section,
+  .dd-reviews-section {
+    padding: 60px 0;
+  }
+
+  .dd-portfolio-grid,
+  .dd-reviews-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dd-portfolio-section .elementor-widget__width-initial,
+  .dd-reviews-section .elementor-widget__width-initial {
+    margin-bottom: 32px;
+  }
+}

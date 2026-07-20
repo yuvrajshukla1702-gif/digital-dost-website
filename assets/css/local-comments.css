@@ -1,5 +1,16 @@
+/* Blog comment section — realistic reader-style layout */
+
 .comments-area {
   margin-top: 44px;
+  padding-top: 32px;
+  border-top: 1px solid #ececf4;
+}
+
+.comments-area .comments-count {
+  margin: 0 0 20px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #1d1d2f;
 }
 
 .comments-area .js-no-comments {
@@ -10,56 +21,105 @@
 
 .comments-area .comment-list {
   list-style: none;
-  margin: 0 0 24px;
+  margin: 0 0 28px;
   padding: 0;
 }
 
 .comments-area .comment-list .comment-body {
   border: 1px solid #ececf4;
-  border-left: 4px solid #794aff;
   border-radius: 12px;
   background: #ffffff;
-  padding: 18px 20px;
-  margin-bottom: 14px;
-  box-shadow: 0 8px 24px rgba(17, 26, 72, 0.06);
+  padding: 16px 18px;
+  margin-bottom: 12px;
+  transition: box-shadow 0.2s ease;
+}
+
+.comments-area .comment-list .comment-body:hover {
+  box-shadow: 0 4px 16px rgba(17, 26, 72, 0.06);
+}
+
+/* Avatar + name row */
+.comments-area .comment-header-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.comments-area .comment-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
 .comments-area .comment-meta {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 12px;
+  flex: 1;
+  min-width: 0;
 }
 
-.comments-area .comment-author .fn {
+.comments-area .comment-author-line {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.comments-area .comment-author-name {
   color: #1d1d2f;
-  font-size: 16px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.comments-area .comment-tag {
+  font-size: 11px;
+  font-weight: 600;
+  color: #794aff;
+  background: rgba(121, 74, 255, 0.1);
+  padding: 2px 8px;
+  border-radius: 100px;
 }
 
 .comments-area .comment-date {
-  color: #7a7f93;
-  font-size: 13px;
+  display: block;
+  color: #9ca3af;
+  font-size: 12px;
+  margin-top: 2px;
 }
 
 .comments-area .comment-content p {
-  margin: 10px 0 0;
+  margin: 0;
   line-height: 1.65;
   color: #44495b;
+  font-size: 15px;
+}
+
+/* Comment form box */
+.comments-area .comment-reply-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1d1d2f;
+  margin-bottom: 16px;
 }
 
 .comments-area .comment-main-box {
-  background: linear-gradient(135deg, #f8f6ff 0%, #ffffff 100%);
-  border: 1px solid #e7e0ff;
-  border-radius: 14px;
-  padding: 22px 22px 18px;
-  margin-bottom: 18px;
-  box-shadow: 0 10px 30px rgba(121, 74, 255, 0.08);
+  background: #f9f8fc;
+  border: 1px solid #ececf4;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 16px;
 }
 
 .comments-area .comment-box-title {
-  margin: 0 0 14px;
-  font-size: 22px;
-  line-height: 1.3;
+  margin: 0 0 12px;
+  font-size: 16px;
+  font-weight: 600;
   color: #1d1d2f;
 }
 
@@ -69,28 +129,29 @@
 
 .comments-area .comment-form-comment textarea {
   width: 100%;
-  min-height: 140px;
-  padding: 14px 16px;
-  border: 1px solid #ddd7f7;
+  min-height: 110px;
+  padding: 12px 14px;
+  border: 1px solid #e3e3ee;
   border-radius: 10px;
   font-size: 15px;
   line-height: 1.6;
   resize: vertical;
   background: #fff;
+  font-family: inherit;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .comments-area .comment-form-comment textarea:focus {
   outline: none;
   border-color: #794aff;
-  box-shadow: 0 0 0 3px rgba(121, 74, 255, 0.15);
+  box-shadow: 0 0 0 3px rgba(121, 74, 255, 0.12);
 }
 
 .comments-area .comment-user-fields {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 16px;
-  margin-bottom: 18px;
+  gap: 14px;
+  margin-bottom: 16px;
 }
 
 .comments-area .comment-form-author,
@@ -101,8 +162,8 @@
 .comments-area .comment-form-author label,
 .comments-area .comment-form-email label {
   display: block;
-  margin-bottom: 8px;
-  font-size: 14px;
+  margin-bottom: 6px;
+  font-size: 13px;
   font-weight: 600;
   color: #44495b;
 }
@@ -110,10 +171,11 @@
 .comments-area .comment-form-author input,
 .comments-area .comment-form-email input {
   width: 100%;
-  padding: 12px 14px;
+  padding: 10px 12px;
   border: 1px solid #e3e3ee;
   border-radius: 8px;
   font-size: 14px;
+  font-family: inherit;
 }
 
 .comments-area .comment-form-author input:focus,
@@ -132,8 +194,8 @@
   color: #fff;
   border: none;
   border-radius: 999px;
-  padding: 12px 28px;
-  font-size: 15px;
+  padding: 11px 24px;
+  font-size: 14px;
   font-weight: 600;
   cursor: pointer;
   transition: background 0.2s ease, transform 0.2s ease;
