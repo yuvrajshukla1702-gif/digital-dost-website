@@ -165,13 +165,30 @@
 			text-decoration: none
 		}
 
-		.digi-logo-header {
-			transform: scale(4);
-			padding-left: 1.5rem;
-		}
+		.digi-logo-header { width: 150px; height: auto; transform: none; object-fit: contain; }
 		
-		.digi-logo-footer {
-			transform: scale(1);
+		.digi-logo-footer img { width: 160px; height: auto; object-fit: contain; }
+
+		#wrapper-navbar.uicore-navbar .uicore-menu > .menu-item > a,
+		#wrapper-navbar.uicore-navbar .ui-menu-item-wrapper,
+		.uicore-mobile-menu-wrapper .uicore-menu > .menu-item > a,
+		.uicore-mobile-menu-wrapper .ui-menu-item-wrapper {
+			color: #1d1d2f !important;
+			opacity: 1 !important;
+		}
+
+		#wrapper-navbar .uicore-nav-menu,
+		#wrapper-navbar .uicore-menu {
+			display: flex !important;
+			align-items: center;
+			visibility: visible !important;
+		}
+
+		#wrapper-navbar .uicore-menu {
+			gap: 8px;
+			list-style: none;
+			margin: 0;
+			padding: 0;
 		}
 	</style>
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
@@ -219,56 +236,50 @@
 						<div class="uicore-branding" data-uils="header-branding" data-uils-title="Site Logo">
 							<a href="../index.html" rel="home">
 								<img class="uicore uicore-logo uicore-main digi-logo-header"
-									src="../wp-content/uploads/sites/15/2023/04/logo-new-dark.webp"
+									src="../assets/images/digital-dost-logo-black.png"
 									alt="Digital Marketing" 
-									style="width: 45px; height: auto;" />
+									style="width: 150px; height: auto;" />
 								<img class="uicore uicore-logo uicore-second digi-logo-header"
-									src="../wp-content/uploads/sites/15/2023/04/logo-new-dark.webp"
+									src="../assets/images/digital-dost-logo-black.png"
 									alt="Digital Marketing" 
-									style="width: 45px; height: auto;" />
+									style="width: 150px; height: auto;" />
 								<img loading="lazy" class="uicore uicore-logo uicore-mobile-main digi-logo-header"
-									src="../wp-content/uploads/sites/15/2023/04/logo-new-dark.webp"
+									src="../assets/images/digital-dost-logo-black.png"
 									alt="Digital Marketing" 
-									style="width: 45px; height: auto;" />
+									style="width: 150px; height: auto;" />
 								<img loading="lazy" class="uicore uicore-logo uicore-mobile-second digi-logo-header"
-									src="../wp-content/uploads/sites/15/2023/04/logo-new-dark.webp"
+									src="../assets/images/digital-dost-logo-black.png"
 									alt="Digital Marketing" 
-									style="width: 45px; height: auto;" />
+									style="width: 150px; height: auto;" />
 							</a>
 						</div>
 						<div class="uicore-nav-menu">
 							<div class="uicore-menu-container uicore-nav">
 								<ul data-uils="header-menu" data-uils-title="Navigation Menu" class="uicore-menu">
-									<li
-										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home page_item page-item-13 current_page_item menu-item-678 ui-has-description">
-										<a href="/" aria-current="page"><span class="ui-menu-item-wrapper"><b>Home</b>
-
-											</span></a>
+									<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-651">
+										<a href="/"><span class="ui-menu-item-wrapper">Home</span></a>
 									</li>
-									<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-651"><a
-											href="/SMMA/"><span class="ui-menu-item-wrapper">SMMA</a></li>
-
-									<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-651"><a
-											href="/advertising-agency/"><span class="ui-menu-item-wrapper">Advertising
-										</a></li>
-
-									<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-652"><a
-											href="/SEO/"><span class="ui-menu-item-wrapper">SEO</span>
-											<span class="ui-badge" style="--ui-badge-color:#794AFF">NEW</span></a></li>
-									<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-652"><a
-											href="/about-us/"><span class="ui-menu-item-wrapper">About Us</span>
-											</a></li>
-
-									<!-- <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-650"><a
-											href="/blog"><span class="ui-menu-item-wrapper">Blogs</span></a>
-									</li> -->
+									<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-651">
+										<a href="/SMMA/"><span class="ui-menu-item-wrapper">SMMA</span></a>
+									</li>
+									<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-651">
+										<a href="/advertising-agency/"><span class="ui-menu-item-wrapper">Advertising</span></a>
+									</li>
+									<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-652">
+										<a href="/SEO/"><span class="ui-menu-item-wrapper">SEO</span><span class="ui-badge" style="--ui-badge-color:#794AFF">NEW</span></a>
+									</li>
+									<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-650 current-menu-item">
+										<a href="/blog/"><span class="ui-menu-item-wrapper">Blogs</span></a>
+									</li>
+									<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-650">
+										<a href="/about-us/"><span class="ui-menu-item-wrapper">About Us</span></a>
+									</li>
 								</ul>
 							</div>
 							<div class="uicore uicore-extra" data-uils="header_extra" data-uils-title="Header Extras">
 								<div class="uicore-cta-wrapper">
 									<a href="/contact" target="_self" class="uicore-btn ">
-										<span class="elementor-button-text">
-											Contact us </span>
+										<span class="elementor-button-text">Contact us</span>
 									</a>
 								</div>
 							</div>
@@ -790,9 +801,9 @@ Toastify({
 														data-widget_type="image.default">
 														<div class="elementor-widget-container digi-logo-footer">
 															<img loading="lazy" width="379" height="96"
-																src="../wp-content/uploads/sites/15/2023/04/logo-new-dark.webp"
+																src="../assets/images/digital-dost-logo-black.png"
 																class="attachment-full size-full wp-image-5"
-																alt="wp-content/uploads/sites/2/2023/03/nubi-logo-1.webp" />
+																alt="Digital Dost" />
 														</div>
 													</div>
 												</div>
@@ -892,7 +903,7 @@ Toastify({
 			<nav class="uicore elementor-container">
 				<div class="uicore-branding uicore-mobile">
 					<a href="/" rel="home">
-						<img loading="lazy" class="uicore uicore-logo digi-logo-header" src="../wp-content/uploads/sites/15/2023/04/logo-transparent-dark.webp"
+						<img loading="lazy" class="uicore uicore-logo digi-logo-header" src="../assets/images/digital-dost-logo-black.png"
 							alt="Digital Marketing" />
 					</a>
 				</div>
@@ -909,22 +920,24 @@ Toastify({
 			<div class="uicore-navigation-content">
 				<div class="uicore-menu-container uicore-nav">
 					<ul data-uils="header-menu" data-uils-title="Navigation Menu" class="uicore-menu">
-						<li
-							class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home page_item page-item-13 current_page_item menu-item-654">
-							<a href="/" aria-current="page"><span class="ui-menu-item-wrapper">Home</span></a>
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-651">
+							<a href="/"><span class="ui-menu-item-wrapper">Home</span></a>
 						</li>
-						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-651"><a
-								href="/SMMA/"><span class="ui-menu-item-wrapper">SMMA</span><span class="ui-badge"
-									style="--ui-badge-color:#794AFF">NEW</span></a></li>
-						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-652"><a
-								href="/advertising-agency/"><span class="ui-menu-item-wrapper">Advertising </span></a>
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-651">
+							<a href="/SMMA/"><span class="ui-menu-item-wrapper">SMMA</span></a>
 						</li>
-						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-652"><a
-								href="/SEO"><span class="ui-menu-item-wrapper">SEO</span></a></li>
-						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-652"><a
-								href="/about-us/"><span class="ui-menu-item-wrapper">About Us</span></a></li>
-						<!-- <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-652"><a
-								href="/blog"><span class="ui-menu-item-wrapper">Blog</span></a></li> -->
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-652">
+							<a href="/advertising-agency/"><span class="ui-menu-item-wrapper">Advertising</span></a>
+						</li>
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-652">
+							<a href="/SEO/"><span class="ui-menu-item-wrapper">SEO</span></a>
+						</li>
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-652 current-menu-item">
+							<a href="/blog/"><span class="ui-menu-item-wrapper">Blog</span></a>
+						</li>
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-652">
+							<a href="/about-us/"><span class="ui-menu-item-wrapper">About Us</span></a>
+						</li>
 					</ul>
 				</div>
 				<div class="uicore uicore-extra" data-uils="header_extra" data-uils-title="Header Extras">
