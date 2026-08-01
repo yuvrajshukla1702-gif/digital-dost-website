@@ -1,17 +1,78 @@
-/* SEO page fixes — keep theme, balance hero + clients strip */
+/* SEO page — clean layout aligned with homepage / SMMA */
 
-/* --- Hero headline --- */
+/* Kill horizontal spill */
+html {
+  overflow-x: hidden;
+}
+
+.elementor-13,
+.elementor-13 .elementor-section,
+.elementor-13 .elementor-container,
+.elementor-13 .elementor-widget-wrap {
+  max-width: 100%;
+}
+
+.elementor-13 .elementor-invisible,
+.elementor-13 .elementor-element.elementor-invisible {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.elementor-13 .animated.fadeIn,
+.elementor-13 .animated-fast {
+  animation: none !important;
+  opacity: 1 !important;
+}
+
+/* ========== HERO ========== */
+.elementor-13 .elementor-element-8f56b0c {
+  padding: 110px 20px 48px !important;
+}
+
+.elementor-13 .elementor-element-8f56b0c > .elementor-container {
+  max-width: 920px !important;
+  margin: 0 auto !important;
+}
+
+.elementor-13 .elementor-element-84e1e07 > .elementor-widget-wrap {
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.elementor-13 .elementor-element-915ba93 {
+  text-align: center !important;
+  width: 100% !important;
+}
+
+.elementor-13 .elementor-element-915ba93 .elementor-heading-title {
+  font-family: "Rubik", sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+  color: #794aff !important;
+  line-height: 1.4 !important;
+}
+
+.elementor-13 .elementor-element-afc78f7 {
+  text-align: center !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
 .elementor-13 .elementor-element-afc78f7 .elementor-heading-title {
   display: block !important;
-  max-width: 920px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100% !important;
+  max-width: 820px !important;
+  margin: 0 auto !important;
+  font-family: "Rubik", sans-serif !important;
+  font-size: clamp(28px, 4.2vw, 44px) !important;
+  font-weight: 700 !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.02em !important;
+  color: #1a1f36 !important;
   white-space: normal !important;
   overflow: visible !important;
   opacity: 1 !important;
   transform: none !important;
-  line-height: 1.25 !important;
-  font-family: "Rubik", sans-serif !important;
 }
 
 .elementor-13 .elementor-element-afc78f7 .elementor-heading-title .char,
@@ -23,144 +84,181 @@
   animation: none !important;
 }
 
-.elementor-13 .elementor-invisible,
-.elementor-13 .elementor-element.elementor-invisible {
-  visibility: visible !important;
-  opacity: 1 !important;
+.elementor-13 .elementor-element-9b21314 {
+  width: 100% !important;
+  max-width: 560px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-align: center !important;
+  --container-widget-width: 100% !important;
 }
 
-.elementor-13 .animated.fadeIn {
-  animation: none !important;
-  opacity: 1 !important;
-}
-
-.elementor-13 .elementor-element-915ba93 .elementor-heading-title,
 .elementor-13 .elementor-element-9b21314 .elementor-widget-container {
+  font-family: "Rubik", sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  line-height: 1.7 !important;
+  color: #6b7185 !important;
+  text-align: center !important;
+  padding: 4px 0 20px !important;
+}
+
+.elementor-13 .elementor-element-13c2e00 {
+  text-align: center !important;
+  width: 100% !important;
+}
+
+.elementor-13 .elementor-element-13c2e00 .elementor-button {
   font-family: "Rubik", sans-serif !important;
 }
 
-.elementor-13 .elementor-element-9b21314 .elementor-widget-container {
-  color: #6b7185 !important;
-  font-size: 16px !important;
-  line-height: 1.7 !important;
-  text-align: center;
-}
-
-/* --- Hero text + image composition (balanced) --- */
+/* Hero visual: stop absolute chaos → clean centered stack */
 .elementor-13 .elementor-element-ca0be49 {
-  max-width: 860px;
-  margin: 8px auto 40px !important;
-  overflow: hidden !important; /* keep absolute art inside this block */
+  max-width: 780px !important;
+  margin: 28px auto 0 !important;
+  overflow: visible !important;
 }
 
 .elementor-13 .elementor-element-33b414c {
-  overflow: hidden !important;
+  overflow: visible !important;
 }
 
 .elementor-13 .elementor-element-33b414c > .elementor-widget-wrap {
   position: relative !important;
-  min-height: 380px !important;
   display: flex !important;
-  align-items: flex-end !important;
+  flex-direction: column !important;
+  align-items: center !important;
   justify-content: center !important;
-  overflow: hidden !important;
+  min-height: 0 !important;
+  gap: 0 !important;
+  overflow: visible !important;
+}
+
+/* Purple skewed panel behind image */
+.elementor-13 .elementor-element-ba0977c {
+  width: 100% !important;
+  order: 1;
 }
 
 .elementor-13 .elementor-element-ba0977c > .elementor-widget-container {
-  margin: 120px 0 20px !important;
-  width: min(720px, 92%) !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
+  margin: 0 auto !important;
+  width: min(680px, 94%) !important;
+  --e-transform-skewY: 0deg !important;
+  transform: none !important;
+  border-radius: 18px !important;
+  overflow: hidden !important;
+  min-height: 280px !important;
+  background: #f3efff !important;
+  border: 1px solid #e4dcff !important;
+  position: relative !important;
+}
+
+.elementor-13 .elementor-element-ba0977c .elementor-spacer-inner {
+  height: 280px !important;
+}
+
+.elementor-13 .elementor-element-ba0977c.bdt-background-overlay-yes > .elementor-widget-container:before {
+  background-color: #794aff !important;
+  opacity: 0.08 !important;
+  border-radius: 18px !important;
+}
+
+/* Main hero image + character — overlay inside the panel */
+.elementor-13 .elementor-element-20b1d55,
+.elementor-13 .elementor-element-e0f4d9c {
+  position: absolute !important;
+  transform: none !important;
+  width: auto !important;
+  max-width: none !important;
+  margin: 0 !important;
+  pointer-events: none;
 }
 
 .elementor-13 .elementor-element-20b1d55 {
   left: 50% !important;
   right: auto !important;
-  bottom: 18px !important;
-  transform: translateX(-54%) !important;
+  bottom: 24px !important;
+  top: auto !important;
+  transform: translateX(-52%) !important;
   z-index: 1 !important;
-  pointer-events: none;
 }
 
 .elementor-13 .elementor-element-20b1d55 img {
-  width: min(620px, 78vw) !important;
-  max-width: 100% !important;
+  width: min(560px, 72vw) !important;
+  max-width: none !important;
   height: auto !important;
+  border-radius: 14px !important;
+  box-shadow: 0 24px 48px rgba(20, 24, 50, 0.12) !important;
   display: block !important;
 }
 
 .elementor-13 .elementor-element-e0f4d9c {
-  right: 8% !important;
   left: auto !important;
-  bottom: 10px !important;
+  right: 6% !important;
+  bottom: 8px !important;
+  top: auto !important;
   z-index: 2 !important;
-  pointer-events: none;
 }
 
 .elementor-13 .elementor-element-e0f4d9c img {
-  width: min(240px, 34vw) !important;
-  max-width: 100% !important;
+  width: min(200px, 28vw) !important;
   height: auto !important;
   display: block !important;
 }
 
 .elementor-13 .elementor-element-e0f4d9c .elementor-widget-container,
 .elementor-13 .elementor-element-20b1d55 .elementor-widget-container {
-  font-size: 0;
+  font-size: 0 !important;
 }
 
-.elementor-13 .elementor-widget-image img {
-  max-width: 100%;
-  height: auto;
+/* Give the wrap enough height for absolute kids */
+.elementor-13 .elementor-element-33b414c > .elementor-widget-wrap {
+  min-height: 340px !important;
+  padding-bottom: 8px !important;
 }
 
-/* --- Clients strip: match homepage type + balance --- */
+/* ========== CLIENTS STRIP ========== */
 .elementor-13 .elementor-element-178ede5 {
   position: relative !important;
-  z-index: 5 !important;
-  clear: both !important;
-  padding: 28px 24px 48px !important;
+  z-index: 3 !important;
+  padding: 40px 20px 24px !important;
   background: #fff !important;
 }
 
 .elementor-13 .elementor-element-178ede5 .elementor-container,
+.elementor-13 .elementor-element-178ede5 .elementor-column,
 .elementor-13 .elementor-element-178ede5 .elementor-widget-wrap {
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
   width: 100% !important;
+  max-width: 100% !important;
 }
 
 .elementor-13 .elementor-element-fc4d53e {
-  text-align: center !important;
   width: 100% !important;
-  max-width: 720px !important;
-  margin: 0 auto 6px !important;
-  position: relative !important;
-  z-index: 2 !important;
+  max-width: 640px !important;
+  margin: 0 auto 18px !important;
+  text-align: center !important;
 }
 
 .elementor-13 .elementor-element-fc4d53e .elementor-widget-container {
   font-family: "Rubik", sans-serif !important;
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400 !important;
   line-height: 1.6 !important;
   color: #8b90a0 !important;
   text-align: center !important;
-  letter-spacing: 0 !important;
-  white-space: normal !important;
 }
 
 .elementor-13 .elementor-element-6b03bbd {
   width: 100% !important;
-  max-width: 920px !important;
-  margin: 8px auto 0 !important;
-  position: relative !important;
-  z-index: 2 !important;
+  max-width: 860px !important;
+  margin: 0 auto !important;
 }
 
 .elementor-13 .elementor-element-6b03bbd.bdt-background-overlay-yes > .elementor-widget-container:before {
-  display: none !important; /* was covering logos */
+  display: none !important;
 }
 
 .elementor-13 .elementor-element-6b03bbd .bdt-logo-carousel-wrapper.bdt-grid {
@@ -168,21 +266,20 @@
   flex-wrap: wrap !important;
   justify-content: center !important;
   align-items: center !important;
-  gap: 12px 36px !important;
-  margin: 18px auto 0 !important;
-  padding: 0 12px !important;
+  gap: 18px 40px !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
 }
 
 .elementor-13 .elementor-element-6b03bbd .bdt-logo-carousel-wrapper.bdt-grid > * {
-  padding-left: 0 !important;
   width: auto !important;
+  padding-left: 0 !important;
 }
 
 .elementor-13 .elementor-element-6b03bbd .bdt-logo-carousel-item {
   height: auto !important;
   width: auto !important;
-  flex: 0 0 auto !important;
-  background: transparent !important;
+  background: none !important;
   border: 0 !important;
   box-shadow: none !important;
 }
@@ -191,48 +288,79 @@
   margin: 0 !important;
   padding: 0 !important;
   border: 0 !important;
-  background: transparent !important;
+  background: none !important;
 }
 
 .elementor-13 .elementor-element-6b03bbd .bdt-logo-carousel-img {
-  height: 42px !important;
+  height: 36px !important;
   width: auto !important;
-  max-width: 130px !important;
+  max-width: 120px !important;
   object-fit: contain !important;
   display: block !important;
   filter: grayscale(1);
-  opacity: 0.72;
+  opacity: 0.65;
 }
 
-@media (max-width: 1024px) {
-  .elementor-13 .elementor-element-33b414c > .elementor-widget-wrap {
-    min-height: 320px !important;
-  }
-
-  .elementor-13 .elementor-element-20b1d55 {
-    transform: translateX(-50%) !important;
-  }
-
-  .elementor-13 .elementor-element-e0f4d9c {
-    right: 4% !important;
-  }
+/* ========== SERVICES ========== */
+.elementor-13 .elementor-element-337cab6 {
+  padding: 40px 20px 24px !important;
 }
 
+.elementor-13 .elementor-element-6ad8eb3 > .elementor-widget-wrap {
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.elementor-13 .elementor-element-7b6b0bf,
+.elementor-13 .elementor-element-ecd12b1 {
+  text-align: center !important;
+  width: 100% !important;
+  max-width: 720px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  --container-widget-width: 100% !important;
+}
+
+.elementor-13 .elementor-element-7b6b0bf .elementor-heading-title,
+.elementor-13 .elementor-element-ecd12b1 .elementor-heading-title {
+  font-family: "Rubik", sans-serif !important;
+  text-align: center !important;
+}
+
+.elementor-13 .elementor-element-f343ac9 > .elementor-container {
+  max-width: 1100px !important;
+  margin: 0 auto !important;
+  padding: 0 16px !important;
+}
+
+/* ========== MOBILE ========== */
 @media (max-width: 767px) {
+  .elementor-13 .elementor-element-8f56b0c {
+    padding: 88px 16px 32px !important;
+  }
+
+  .elementor-13 .elementor-element-afc78f7 .elementor-heading-title {
+    font-size: 28px !important;
+  }
+
   .elementor-13 .elementor-element-33b414c > .elementor-widget-wrap {
     min-height: 260px !important;
   }
 
-  .elementor-13 .elementor-element-ba0977c > .elementor-widget-container {
-    margin-top: 80px !important;
+  .elementor-13 .elementor-element-ba0977c .elementor-spacer-inner {
+    height: 220px !important;
+  }
+
+  .elementor-13 .elementor-element-20b1d55 img {
+    width: min(420px, 86vw) !important;
   }
 
   .elementor-13 .elementor-element-e0f4d9c img {
-    width: min(160px, 40vw) !important;
+    width: min(140px, 32vw) !important;
   }
 
   .elementor-13 .elementor-element-6b03bbd .bdt-logo-carousel-img {
-    height: 34px !important;
-    max-width: 100px !important;
+    height: 30px !important;
+    max-width: 96px !important;
   }
 }
