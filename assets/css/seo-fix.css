@@ -1,0 +1,42 @@
+/* SEO page fixes — keep Nubi/UiCore theme, repair broken animations */
+
+.elementor-13 .elementor-element-afc78f7 .elementor-heading-title {
+  display: block !important;
+  max-width: 920px;
+  margin-left: auto;
+  margin-right: auto;
+  white-space: normal !important;
+  overflow: visible !important;
+  opacity: 1 !important;
+  transform: none !important;
+  line-height: 1.25 !important;
+}
+
+.elementor-13 .elementor-element-afc78f7 .elementor-heading-title .char,
+.elementor-13 .elementor-element-afc78f7 .elementor-heading-title .word,
+.elementor-13 .elementor-element-afc78f7 .elementor-heading-title .ui-e-animated {
+  display: inline !important;
+  opacity: 1 !important;
+  transform: none !important;
+  animation: none !important;
+}
+
+.elementor-13 .elementor-invisible,
+.elementor-13 .elementor-element.elementor-invisible {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.elementor-13 .animated.fadeIn {
+  animation: none !important;
+  opacity: 1 !important;
+}
+
+.elementor-13 .elementor-element-9b21314 .elementor-widget-container {
+  color: #5b6172;
+}
+
+.elementor-13 .elementor-widget-image img {
+  max-width: 100%;
+  height: auto;
+}
