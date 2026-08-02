@@ -208,7 +208,15 @@ html {
 
 .elementor-13 .elementor-element-e0f4d9c .elementor-widget-container,
 .elementor-13 .elementor-element-20b1d55 .elementor-widget-container {
-  font-size: 0 !important;
+  font-size: inherit !important;
+}
+
+.elementor-13 .elementor-element-e0f4d9c img,
+.elementor-13 .elementor-element-20b1d55 img {
+  -webkit-mask-image: none !important;
+  mask-image: none !important;
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 
 /* Give the wrap enough height for absolute kids */
