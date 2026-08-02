@@ -26,7 +26,7 @@ html {
 
 /* ========== HERO ========== */
 .elementor-13 .elementor-element-8f56b0c {
-  padding: 110px 20px 48px !important;
+  padding: 120px 20px 20px !important;
 }
 
 .elementor-13 .elementor-element-8f56b0c > .elementor-container {
@@ -106,10 +106,20 @@ html {
 .elementor-13 .elementor-element-13c2e00 {
   text-align: center !important;
   width: 100% !important;
+  margin: 4px 0 8px !important;
 }
 
 .elementor-13 .elementor-element-13c2e00 .elementor-button {
   font-family: "Rubik", sans-serif !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.01em !important;
+  box-shadow: 0 10px 24px rgba(121, 74, 255, 0.22) !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.elementor-13 .elementor-element-13c2e00 .elementor-button:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 14px 28px rgba(121, 74, 255, 0.28) !important;
 }
 
 /* Hero visual: stop absolute chaos → clean centered stack */
@@ -225,43 +235,78 @@ html {
   padding-bottom: 8px !important;
 }
 
-/* ========== CLIENTS STRIP ========== */
+/* ========== CLIENTS STRIP — truly centered + polished ========== */
 .elementor-13 .elementor-element-178ede5 {
   position: relative !important;
   z-index: 3 !important;
-  padding: 40px 20px 24px !important;
-  background: #fff !important;
+  padding: 36px 24px 44px !important;
+  background:
+    linear-gradient(180deg, #ffffff 0%, #f7f5ff 42%, #f7f5ff 58%, #ffffff 100%) !important;
 }
 
-.elementor-13 .elementor-element-178ede5 .elementor-container,
+.elementor-13 .elementor-element-178ede5::before {
+  content: "";
+  display: block;
+  width: min(72px, 20vw);
+  height: 2px;
+  margin: 0 auto 24px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, transparent, #cbb6ff 20%, #794aff 50%, #cbb6ff 80%, transparent);
+}
+
+.elementor-13 .elementor-element-178ede5 > .elementor-container {
+  max-width: 1100px !important;
+  margin: 0 auto !important;
+  width: 100% !important;
+}
+
 .elementor-13 .elementor-element-178ede5 .elementor-column,
 .elementor-13 .elementor-element-178ede5 .elementor-widget-wrap {
   display: flex !important;
   flex-direction: column !important;
-  align-items: center !important;
+  flex-wrap: nowrap !important;
+  align-items: stretch !important;
+  align-content: stretch !important;
+  justify-content: center !important;
   width: 100% !important;
   max-width: 100% !important;
 }
 
 .elementor-13 .elementor-element-fc4d53e {
   width: 100% !important;
-  max-width: 640px !important;
-  margin: 0 auto 18px !important;
+  max-width: 100% !important;
+  margin: 0 0 22px !important;
   text-align: center !important;
+  align-self: stretch !important;
 }
 
 .elementor-13 .elementor-element-fc4d53e .elementor-widget-container {
   font-family: "Rubik", sans-serif !important;
   font-size: 15px !important;
-  font-weight: 400 !important;
-  line-height: 1.6 !important;
-  color: #8b90a0 !important;
+  font-weight: 500 !important;
+  line-height: 1.55 !important;
+  color: #6f7589 !important;
   text-align: center !important;
+  letter-spacing: 0.02em !important;
+  max-width: 640px !important;
+  margin: 0 auto !important;
 }
 
 .elementor-13 .elementor-element-6b03bbd {
   width: 100% !important;
-  max-width: 860px !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  align-self: stretch !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.elementor-13 .elementor-element-6b03bbd > .elementor-widget-container,
+.elementor-13 .elementor-element-6b03bbd > .elementor-widget-container > div {
+  width: 100% !important;
+  max-width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
   margin: 0 auto !important;
 }
 
@@ -271,17 +316,25 @@ html {
 
 .elementor-13 .elementor-element-6b03bbd .bdt-logo-carousel-wrapper.bdt-grid {
   display: flex !important;
-  flex-wrap: wrap !important;
+  flex-wrap: nowrap !important;
   justify-content: center !important;
   align-items: center !important;
-  gap: 18px 40px !important;
+  gap: 0 40px !important;
   margin: 0 auto !important;
-  padding: 0 !important;
+  padding: 18px 28px !important;
+  width: max-content !important;
+  max-width: 100% !important;
+  background: rgba(255, 255, 255, 0.72) !important;
+  border: 1px solid rgba(121, 74, 255, 0.1) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 10px 30px rgba(26, 31, 54, 0.04) !important;
 }
 
 .elementor-13 .elementor-element-6b03bbd .bdt-logo-carousel-wrapper.bdt-grid > * {
   width: auto !important;
+  flex: 0 0 auto !important;
   padding-left: 0 !important;
+  margin: 0 !important;
 }
 
 .elementor-13 .elementor-element-6b03bbd .bdt-logo-carousel-item {
@@ -290,6 +343,11 @@ html {
   background: none !important;
   border: 0 !important;
   box-shadow: none !important;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.elementor-13 .elementor-element-6b03bbd .bdt-logo-carousel-item:hover {
+  transform: translateY(-2px);
 }
 
 .elementor-13 .elementor-element-6b03bbd .bdt-logo-carousel-figure {
@@ -300,18 +358,24 @@ html {
 }
 
 .elementor-13 .elementor-element-6b03bbd .bdt-logo-carousel-img {
-  height: 36px !important;
+  height: 42px !important;
   width: auto !important;
-  max-width: 120px !important;
+  max-width: 124px !important;
   object-fit: contain !important;
   display: block !important;
   filter: grayscale(1);
-  opacity: 0.65;
+  opacity: 0.78;
+  transition: opacity 0.2s ease, filter 0.2s ease;
+}
+
+.elementor-13 .elementor-element-6b03bbd .bdt-logo-carousel-item:hover .bdt-logo-carousel-img {
+  filter: grayscale(0);
+  opacity: 1;
 }
 
 /* ========== SERVICES ========== */
 .elementor-13 .elementor-element-337cab6 {
-  padding: 40px 20px 24px !important;
+  padding: 56px 20px 28px !important;
 }
 
 .elementor-13 .elementor-element-6ad8eb3 > .elementor-widget-wrap {
@@ -329,16 +393,55 @@ html {
   --container-widget-width: 100% !important;
 }
 
-.elementor-13 .elementor-element-7b6b0bf .elementor-heading-title,
+.elementor-13 .elementor-element-7b6b0bf .elementor-heading-title {
+  font-family: "Rubik", sans-serif !important;
+  text-align: center !important;
+  color: #794aff !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.06em !important;
+  text-transform: uppercase !important;
+}
+
 .elementor-13 .elementor-element-ecd12b1 .elementor-heading-title {
   font-family: "Rubik", sans-serif !important;
   text-align: center !important;
+  font-size: clamp(26px, 3.4vw, 36px) !important;
+  line-height: 1.25 !important;
+  letter-spacing: -0.02em !important;
+  color: #1a1f36 !important;
 }
 
 .elementor-13 .elementor-element-f343ac9 > .elementor-container {
   max-width: 1100px !important;
   margin: 0 auto !important;
   padding: 0 16px !important;
+}
+
+/* Service tabs polish */
+.elementor-13 .elementor-element-e023272 .bdt-tab .bdt-tabs-item-title {
+  transition: box-shadow 0.2s ease, transform 0.2s ease !important;
+}
+
+.elementor-13 .elementor-element-e023272 .bdt-tab .bdt-tabs-item.bdt-active .bdt-tabs-item-title {
+  box-shadow: 0 12px 28px rgba(121, 74, 255, 0.12) !important;
+}
+
+/* Integrations center logo — Digital Dost (not Nubi) */
+.elementor-13 .elementor-element-c26f654 .elementor-widget-container {
+  background: #fff !important;
+  border-radius: 50% !important;
+  padding: 22px !important;
+  box-shadow: 0 10px 28px rgba(20, 24, 50, 0.12) !important;
+}
+
+.elementor-13 .elementor-element-c26f654 img,
+.elementor-13 .digi-integrations-logo {
+  width: 120px !important;
+  height: auto !important;
+  max-width: 120px !important;
+  object-fit: contain !important;
+  display: block !important;
 }
 
 /* ========== MOBILE ========== */
@@ -367,8 +470,21 @@ html {
     width: min(140px, 32vw) !important;
   }
 
+  .elementor-13 .elementor-element-178ede5 {
+    padding: 24px 16px 36px !important;
+  }
+
+  .elementor-13 .elementor-element-6b03bbd .bdt-logo-carousel-wrapper.bdt-grid {
+    flex-wrap: wrap !important;
+    gap: 16px 28px !important;
+    width: 100% !important;
+    max-width: 420px !important;
+    justify-content: center !important;
+    padding: 16px 18px !important;
+  }
+
   .elementor-13 .elementor-element-6b03bbd .bdt-logo-carousel-img {
-    height: 30px !important;
-    max-width: 96px !important;
+    height: 32px !important;
+    max-width: 100px !important;
   }
 }

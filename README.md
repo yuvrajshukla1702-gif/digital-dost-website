@@ -23,6 +23,5 @@ Open in browser: http://localhost:8080/
 
 ## Project notes
 
-- Based on NubiCore template, customized for Digital Dost
 - Blog comments use `assets/js/local-comments.js` (browser localStorage)
 - SEO files: `robots.txt`, `sitemap.xml`
