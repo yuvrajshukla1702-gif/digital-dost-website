@@ -1933,8 +1933,8 @@
 					display: none;
 					z-index: 9999;
 					animation-name: uicoreFadeIn;
-					animation-timing-function: ease-in-out;
-					animation-duration: .4s;
+					animation-timing-function: ease-out;
+					animation-duration: .25s;
 				}
 
 				.ui-popup-active {
@@ -1947,7 +1947,7 @@
 					width: 100%;
 					max-width: 100vw;
 					max-height: 95vh;
-					animation-duration: .6s;
+					animation-duration: .28s;
 					overflow: hidden;
 				}
 
@@ -2147,27 +2147,32 @@ Toastify({
 				</div>
 			</div>
 			<script>
-				if (true) {
-					var uipopupTrigger636 = function () {
-						jQuery(".ui-popup-636").addClass("ui-popup-active"); document.body.setAttribute("style", "overflow:hidden;");
-					};
-					jQuery(document).ready(function () {
-						document.addEventListener('mouseout', onExitTrigger636);
-						function onExitTrigger636(event) {
-							if (!event.toElement && !event.relatedTarget) {
-								uipopupTrigger636();
-								document.removeEventListener('mouseout', onExitTrigger636);
-							}
+				(function () {
+					var shown = false;
+					function uipopupTrigger636() {
+						if (shown) return;
+						if (sessionStorage.getItem('dd-hey-wait-shown') === '1') return;
+						shown = true;
+						sessionStorage.setItem('dd-hey-wait-shown', '1');
+						jQuery(".ui-popup-636").addClass("ui-popup-active");
+						document.body.setAttribute("style", "overflow:hidden;");
+						document.removeEventListener('mouseout', onExitTrigger636);
+					}
+					function onExitTrigger636(event) {
+						if (!event.toElement && !event.relatedTarget) {
+							uipopupTrigger636();
 						}
+					}
+					jQuery(document).ready(function () {
+						// Show sooner while browsing (was exit-intent only / felt too late)
+						setTimeout(uipopupTrigger636, 2500);
+						document.addEventListener('mouseout', onExitTrigger636);
+						jQuery('.ui-popup-close, #ui-close-popup, .ui-popup-overlay').on('click', function () {
+							jQuery(this).closest('.ui-popup-active').removeClass('ui-popup-active');
+							document.body.setAttribute("style", "overflow:unset;");
+						});
 					});
-
-				}
-				jQuery(document).ready(function () {
-					jQuery('.ui-popup-close, #ui-close-popup, .ui-popup-overlay').on('click', function () {
-						jQuery(this).closest('.ui-popup-active').removeClass('ui-popup-active');
-						document.body.setAttribute("style", "overflow:unset;");
-					})
-				})
+				})();
 			</script>
 
 		</div>
