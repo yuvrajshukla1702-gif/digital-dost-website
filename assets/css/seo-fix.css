@@ -427,19 +427,34 @@ html {
   box-shadow: 0 12px 28px rgba(121, 74, 255, 0.12) !important;
 }
 
-/* Integrations center logo — Digital Dost (not Nubi) */
+/* Integrations center logo — keep Digital Dost in a small fixed circle */
+.elementor-13 .elementor-element-c26f654 {
+  width: 110px !important;
+  max-width: 110px !important;
+  z-index: 5 !important;
+}
+
 .elementor-13 .elementor-element-c26f654 .elementor-widget-container {
+  width: 110px !important;
+  height: 110px !important;
+  max-width: 110px !important;
+  box-sizing: border-box !important;
   background: #fff !important;
   border-radius: 50% !important;
-  padding: 22px !important;
-  box-shadow: 0 10px 28px rgba(20, 24, 50, 0.12) !important;
+  padding: 18px !important;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: hidden !important;
 }
 
 .elementor-13 .elementor-element-c26f654 img,
 .elementor-13 .digi-integrations-logo {
-  width: 120px !important;
+  width: 72px !important;
+  max-width: 72px !important;
   height: auto !important;
-  max-width: 120px !important;
+  max-height: 52px !important;
   object-fit: contain !important;
   display: block !important;
 }
