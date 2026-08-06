@@ -459,6 +459,157 @@ html {
   display: block !important;
 }
 
+/* ========== LOVED BY FOUNDERS — even testimonial cards ========== */
+.elementor-13 .elementor-element-a79004f {
+  overflow: visible !important;
+  padding: 72px 20px 64px !important;
+}
+
+.elementor-13 .elementor-element-c5e8498,
+.elementor-13 .elementor-element-8ed013d {
+  text-align: center !important;
+  width: 100% !important;
+}
+
+.elementor-13 .elementor-element-c5e8498 .elementor-heading-title {
+  font-family: "Rubik", sans-serif !important;
+  color: #794aff !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.06em !important;
+  text-transform: uppercase !important;
+}
+
+.elementor-13 .elementor-element-8ed013d .elementor-heading-title {
+  font-family: "Rubik", sans-serif !important;
+  font-size: clamp(28px, 3.6vw, 40px) !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.02em !important;
+  color: #1a1f36 !important;
+}
+
+.elementor-13 .elementor-element-8ed013d > .elementor-widget-container {
+  padding-bottom: 28px !important;
+}
+
+.elementor-13 .elementor-element-7097c2f {
+  width: 100% !important;
+  max-width: 1100px !important;
+  margin: 0 auto !important;
+}
+
+.elementor-13 .elementor-element-7097c2f > .elementor-widget-container {
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: visible !important;
+}
+
+.elementor-13 .elementor-element-7097c2f.bdt-background-overlay-yes > .elementor-widget-container:before {
+  display: none !important;
+}
+
+.elementor-13 .elementor-element-7097c2f .bdt-review-card-carousel,
+.elementor-13 .elementor-element-7097c2f .swiper,
+.elementor-13 .elementor-element-7097c2f .swiper-carousel {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  margin: 0 !important;
+  overflow: visible !important;
+}
+
+.elementor-13 .elementor-element-7097c2f .swiper-wrapper {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 22px !important;
+  width: 100% !important;
+  height: auto !important;
+  transform: none !important;
+  align-items: stretch !important;
+}
+
+.elementor-13 .elementor-element-7097c2f .swiper-slide,
+.elementor-13 .elementor-element-7097c2f .bdt-ep-review-card-carousel-item {
+  width: auto !important;
+  max-width: none !important;
+  height: auto !important;
+  min-height: 100% !important;
+  margin: 0 !important;
+  position: relative !important;
+  left: auto !important;
+  right: auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+  box-sizing: border-box !important;
+  background-color: #f6f7fb !important;
+  border-radius: 16px !important;
+  padding: 28px 24px !important;
+  box-shadow: none !important;
+}
+
+.elementor-13 .elementor-element-7097c2f .bdt-ep-review-card-carousel-image {
+  width: 48px !important;
+  height: 48px !important;
+  min-width: 48px !important;
+  min-height: 48px !important;
+  border-radius: 50% !important;
+  overflow: hidden !important;
+  margin: 0 0 14px !important;
+}
+
+.elementor-13 .elementor-element-7097c2f .bdt-ep-review-card-carousel-image img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
+.elementor-13 .elementor-element-7097c2f .bdt-ep-review-card-carousel-content {
+  display: flex !important;
+  flex-direction: column !important;
+  flex: 1 1 auto !important;
+  min-height: 0 !important;
+}
+
+.elementor-13 .elementor-element-7097c2f .bdt-ep-review-card-carousel-name {
+  font-family: "Rubik", sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  color: #1a1f36 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.elementor-13 .elementor-element-7097c2f .bdt-ep-review-card-carousel-job-title {
+  font-family: "Rubik", sans-serif !important;
+  font-size: 13px !important;
+  color: #7a8094 !important;
+  padding: 4px 0 16px !important;
+  margin: 0 !important;
+}
+
+.elementor-13 .elementor-element-7097c2f .bdt-ep-review-card-carousel-text {
+  font-family: "Rubik", sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 450 !important;
+  line-height: 1.55 !important;
+  color: #3a4055 !important;
+  margin: 0 !important;
+  min-height: calc(1.55em * 4) !important;
+  display: -webkit-box !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-line-clamp: 4 !important;
+  line-clamp: 4 !important;
+  overflow: hidden !important;
+}
+
+.elementor-13 .elementor-element-7097c2f .bdt-navigation-prev,
+.elementor-13 .elementor-element-7097c2f .bdt-navigation-next,
+.elementor-13 .elementor-element-7097c2f .swiper-pagination,
+.elementor-13 .elementor-element-7097c2f .swiper-scrollbar {
+  display: none !important;
+}
+
 /* ========== MOBILE ========== */
 @media (max-width: 767px) {
   .elementor-13 .elementor-element-8f56b0c {
@@ -501,5 +652,25 @@ html {
   .elementor-13 .elementor-element-6b03bbd .bdt-logo-carousel-img {
     height: 32px !important;
     max-width: 100px !important;
+  }
+
+  .elementor-13 .elementor-element-a79004f {
+    padding: 56px 16px 48px !important;
+  }
+
+  .elementor-13 .elementor-element-7097c2f .swiper-wrapper {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  .elementor-13 .elementor-element-7097c2f .bdt-ep-review-card-carousel-text {
+    -webkit-line-clamp: 6 !important;
+    line-clamp: 6 !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .elementor-13 .elementor-element-7097c2f .swiper-wrapper {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   }
 }
