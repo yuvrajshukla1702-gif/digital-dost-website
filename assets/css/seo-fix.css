@@ -427,22 +427,163 @@ html {
   box-shadow: 0 12px 28px rgba(121, 74, 255, 0.12) !important;
 }
 
-/* Integrations center logo — keep Digital Dost in a small fixed circle */
+/* ========== INTEGRATIONS — clean centered layout (no absolute pile-up) ========== */
+.elementor-13 .elementor-element-f6e3577 {
+  padding: 72px 20px 32px !important;
+  overflow: visible !important;
+}
+
+.elementor-13 .elementor-element-de50902 {
+  width: 100% !important;
+}
+
+.elementor-13 .elementor-element-de50902 > .elementor-widget-wrap {
+  display: flex !important;
+  flex-direction: column !important;
+  flex-wrap: nowrap !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  text-align: center !important;
+  gap: 0 !important;
+  min-height: 0 !important;
+  height: auto !important;
+  padding: 48px 28px 40px !important;
+  border-radius: 24px !important;
+  background: linear-gradient(165deg, #f4efff 0%, #ebe4ff 45%, #f7f5ff 100%) !important;
+  box-sizing: border-box !important;
+  position: relative !important;
+  overflow: visible !important;
+}
+
+.elementor-13 .elementor-element-de50902.elementor-column > .elementor-widget-wrap,
+.elementor-13 .elementor-element-de50902 > .elementor-element-populated {
+  min-height: 0 !important;
+  height: auto !important;
+}
+
+.elementor-13 .elementor-element-de50902 > .elementor-widget-wrap > .elementor-background-overlay {
+  display: none !important;
+}
+
+.elementor-13 .elementor-element-f6e3577 .elementor-absolute {
+  position: relative !important;
+  left: auto !important;
+  right: auto !important;
+  top: auto !important;
+  bottom: auto !important;
+  inset: auto !important;
+  transform: none !important;
+  width: auto !important;
+  max-width: none !important;
+  margin: 0 !important;
+  z-index: 1 !important;
+}
+
+.elementor-13 .elementor-element-21a71c1 {
+  order: 1 !important;
+  width: 100% !important;
+  max-width: 640px !important;
+  margin: 0 0 12px !important;
+}
+
+.elementor-13 .elementor-element-21a71c1 .elementor-heading-title {
+  font-family: "Rubik", sans-serif !important;
+  color: #794aff !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.06em !important;
+  text-transform: uppercase !important;
+  text-align: center !important;
+}
+
+.elementor-13 .elementor-element-3f558f8 {
+  display: none !important;
+}
+
+.elementor-13 .elementor-element-9ad2270 {
+  order: 2 !important;
+  width: 100% !important;
+  max-width: 640px !important;
+  margin: 0 auto 14px !important;
+  --container-widget-width: 100% !important;
+}
+
+.elementor-13 .elementor-element-9ad2270 .elementor-heading-title {
+  font-family: "Rubik", sans-serif !important;
+  font-size: clamp(24px, 3.2vw, 34px) !important;
+  line-height: 1.28 !important;
+  letter-spacing: -0.02em !important;
+  color: #1a1f36 !important;
+  text-align: center !important;
+}
+
+.elementor-13 .elementor-element-1bfce22 {
+  order: 3 !important;
+  width: 100% !important;
+  max-width: 520px !important;
+  margin: 0 auto 22px !important;
+  --container-widget-width: 100% !important;
+}
+
+.elementor-13 .elementor-element-1bfce22 .elementor-widget-container {
+  font-family: "Rubik", sans-serif !important;
+  font-size: 16px !important;
+  line-height: 1.6 !important;
+  color: #6f7589 !important;
+  text-align: center !important;
+}
+
+.elementor-13 .elementor-element-4b09183 {
+  order: 4 !important;
+  width: 100% !important;
+  max-width: 640px !important;
+  margin: 0 0 20px !important;
+}
+
+.elementor-13 .elementor-element-4b09183 .elementor-button {
+  background: #794aff !important;
+  border-radius: 999px !important;
+  padding: 14px 28px !important;
+}
+
+/* Hide orbiting tool icons — they were overlapping the headline */
+.elementor-13 .elementor-element-189dd41,
+.elementor-13 .elementor-element-bb7b18a,
+.elementor-13 .elementor-element-1fca3dd,
+.elementor-13 .elementor-element-f944f94,
+.elementor-13 .elementor-element-e39368b,
+.elementor-13 .elementor-element-c981cca {
+  display: none !important;
+}
+
+/* Digital Dost mark sits cleanly under the CTA */
 .elementor-13 .elementor-element-c26f654 {
-  width: 110px !important;
-  max-width: 110px !important;
-  z-index: 5 !important;
+  order: 5 !important;
+  position: relative !important;
+  left: auto !important;
+  right: auto !important;
+  top: auto !important;
+  bottom: auto !important;
+  inset: auto !important;
+  transform: none !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 96px !important;
+  max-width: 96px !important;
+  margin: 0 auto !important;
+  z-index: 2 !important;
 }
 
 .elementor-13 .elementor-element-c26f654 .elementor-widget-container {
-  width: 110px !important;
-  height: 110px !important;
-  max-width: 110px !important;
+  width: 96px !important;
+  height: 96px !important;
+  max-width: 96px !important;
   box-sizing: border-box !important;
   background: #fff !important;
   border-radius: 50% !important;
   padding: 18px !important;
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 10px 24px rgba(26, 31, 54, 0.1) !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -451,10 +592,10 @@ html {
 
 .elementor-13 .elementor-element-c26f654 img,
 .elementor-13 .digi-integrations-logo {
-  width: 72px !important;
-  max-width: 72px !important;
+  width: 62px !important;
+  max-width: 62px !important;
   height: auto !important;
-  max-height: 52px !important;
+  max-height: 44px !important;
   object-fit: contain !important;
   display: block !important;
 }
@@ -715,57 +856,31 @@ html {
     line-clamp: 6 !important;
   }
 
-  /* Integrations: stop absolute chaos on phones */
+  /* Integrations: tighter spacing on phones */
   .elementor-13 .elementor-element-f6e3577 {
-    padding: 48px 16px 40px !important;
-  }
-
-  .elementor-13 .elementor-element-f6e3577 .elementor-absolute {
-    position: relative !important;
-    left: auto !important;
-    right: auto !important;
-    top: auto !important;
-    bottom: auto !important;
-    transform: none !important;
-    width: auto !important;
-    margin: 0 !important;
+    padding: 40px 12px 36px !important;
   }
 
   .elementor-13 .elementor-element-de50902 > .elementor-widget-wrap {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    text-align: center !important;
-    gap: 8px !important;
-  }
-
-  /* Hide orbiting brand icons; keep copy + CTA + center logo */
-  .elementor-13 .elementor-element-189dd41,
-  .elementor-13 .elementor-element-bb7b18a,
-  .elementor-13 .elementor-element-1fca3dd,
-  .elementor-13 .elementor-element-f944f94,
-  .elementor-13 .elementor-element-e39368b,
-  .elementor-13 .elementor-element-c981cca {
-    display: none !important;
+    padding: 36px 18px 32px !important;
+    border-radius: 20px !important;
   }
 
   .elementor-13 .elementor-element-c26f654 {
-    position: relative !important;
-    inset: auto !important;
-    width: 96px !important;
-    max-width: 96px !important;
-    margin: 18px auto 0 !important;
-    order: 40;
+    width: 80px !important;
+    max-width: 80px !important;
   }
 
   .elementor-13 .elementor-element-c26f654 .elementor-widget-container {
-    width: 96px !important;
-    height: 96px !important;
+    width: 80px !important;
+    height: 80px !important;
+    max-width: 80px !important;
+    padding: 14px !important;
   }
 
   .elementor-13 .elementor-element-c26f654 img {
-    width: 60px !important;
-    max-width: 60px !important;
+    width: 52px !important;
+    max-width: 52px !important;
   }
 
   /* Hero breathing room */
