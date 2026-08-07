@@ -375,7 +375,7 @@ html {
 
 /* ========== SERVICES ========== */
 .elementor-13 .elementor-element-337cab6 {
-  padding: 56px 20px 28px !important;
+  padding: 64px 20px 20px !important;
 }
 
 .elementor-13 .elementor-element-6ad8eb3 > .elementor-widget-wrap {
@@ -391,6 +391,7 @@ html {
   margin-left: auto !important;
   margin-right: auto !important;
   --container-widget-width: 100% !important;
+  align-self: center !important;
 }
 
 .elementor-13 .elementor-element-7b6b0bf .elementor-heading-title {
@@ -412,19 +413,166 @@ html {
   color: #1a1f36 !important;
 }
 
-.elementor-13 .elementor-element-f343ac9 > .elementor-container {
-  max-width: 1100px !important;
-  margin: 0 auto !important;
-  padding: 0 16px !important;
+.elementor-13 .elementor-element-f343ac9 {
+  padding: 12px 20px 72px !important;
 }
 
-/* Service tabs polish */
+.elementor-13 .elementor-element-f343ac9 > .elementor-container {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 36px !important;
+  max-width: 1100px !important;
+  margin: 0 auto !important;
+  padding: 0 8px !important;
+  width: 100% !important;
+}
+
+.elementor-13 .elementor-element-2d5be01,
+.elementor-13 .elementor-element-2d7878b {
+  width: calc(50% - 18px) !important;
+  max-width: none !important;
+  margin: 0 !important;
+}
+
+.elementor-13 .elementor-element-2d5be01 > .elementor-widget-wrap,
+.elementor-13 .elementor-element-2d7878b > .elementor-widget-wrap {
+  align-items: center !important;
+  justify-content: center !important;
+  height: 100% !important;
+}
+
+.elementor-13 .elementor-element-2d7878b img {
+  width: 100% !important;
+  max-width: 520px !important;
+  height: auto !important;
+  display: block !important;
+  margin: 0 auto !important;
+}
+
+/* Keep only the active linked service image visible and centered */
+.elementor-13 .elementor-element-2d7878b > .elementor-widget-wrap {
+  position: relative !important;
+  min-height: 360px !important;
+}
+
+.elementor-13 .elementor-element-2d7878b > .elementor-widget-wrap > .elementor-inner-section {
+  width: 100% !important;
+}
+
+.elementor-13 .elementor-element-2d7878b > .elementor-widget-wrap > .elementor-inner-section.elementor-invisible,
+.elementor-13 .elementor-element-2d7878b > .elementor-widget-wrap > .elementor-inner-section[hidden],
+.elementor-13 .elementor-element-2d7878b > .elementor-widget-wrap > .elementor-inner-section.bdt-hidden {
+  display: none !important;
+}
+
+/* Equal service cards — always show descriptions */
+.elementor-13 .elementor-element-e023272 {
+  width: 100% !important;
+}
+
+.elementor-13 .elementor-element-e023272 .bdt-tabs-area,
+.elementor-13 .elementor-element-e023272 .bdt-tabs,
+.elementor-13 .elementor-element-e023272 .bdt-grid-collapse,
+.elementor-13 .elementor-element-e023272 .bdt-tab-wrapper {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.elementor-13 .elementor-element-e023272 .bdt-tab-wrapper > div {
+  background: transparent !important;
+  border-radius: 0 !important;
+  overflow: visible !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+}
+
+.elementor-13 .elementor-element-e023272 .bdt-tab {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 12px !important;
+  width: 100% !important;
+}
+
+.elementor-13 .elementor-element-e023272 .bdt-tabs-item {
+  margin: 0 !important;
+  width: 100% !important;
+}
+
 .elementor-13 .elementor-element-e023272 .bdt-tab .bdt-tabs-item-title {
-  transition: box-shadow 0.2s ease, transform 0.2s ease !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  min-height: 118px !important;
+  padding: 18px 18px 16px !important;
+  background: #ffffff !important;
+  border: 1px solid rgba(121, 74, 255, 0.12) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 8px 22px rgba(26, 31, 54, 0.04) !important;
+  color: #1a1f36 !important;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease !important;
 }
 
 .elementor-13 .elementor-element-e023272 .bdt-tab .bdt-tabs-item.bdt-active .bdt-tabs-item-title {
+  background: #ffffff !important;
+  border-color: rgba(121, 74, 255, 0.45) !important;
   box-shadow: 0 12px 28px rgba(121, 74, 255, 0.12) !important;
+  transform: translateY(-1px) !important;
+}
+
+.elementor-13 .elementor-element-e023272 .bdt-tab-title-icon-wrapper {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  margin-bottom: 8px !important;
+}
+
+.elementor-13 .elementor-element-e023272 .bdt-tab-text {
+  font-family: "Rubik", sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  color: #1a1f36 !important;
+  line-height: 1.3 !important;
+}
+
+.elementor-13 .elementor-element-e023272 .bdt-tab .bdt-tabs-item-title i,
+.elementor-13 .elementor-element-e023272 .bdt-tab .bdt-tabs-item.bdt-active .bdt-tabs-item-title i {
+  color: #794aff !important;
+  font-size: 18px !important;
+}
+
+.elementor-13 .elementor-element-e023272 .bdt-tab .bdt-tab-sub-title,
+.elementor-13 .elementor-element-e023272 .bdt-tab .bdt-tabs-item.bdt-active .bdt-tab-sub-title {
+  display: block !important;
+  color: #6f7589 !important;
+  font-family: "Rubik", sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 1.55 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  max-height: none !important;
+  height: auto !important;
+  overflow: visible !important;
+  margin: 0 !important;
+}
+
+.elementor-13 .elementor-element-e023272 .bdt-switcher-wrapper {
+  display: none !important;
+}
+
+@media (max-width: 1024px) {
+  .elementor-13 .elementor-element-2d5be01,
+  .elementor-13 .elementor-element-2d7878b {
+    width: 100% !important;
+  }
+
+  .elementor-13 .elementor-element-f343ac9 > .elementor-container {
+    gap: 28px !important;
+  }
 }
 
 /* ========== INTEGRATIONS — clean centered layout (no absolute pile-up) ========== */
