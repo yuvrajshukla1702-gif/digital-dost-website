@@ -600,6 +600,101 @@ html {
   display: block !important;
 }
 
+/* ========== RESULTS STATS — breathe, don’t crowd ========== */
+.elementor-13 .elementor-element-13ed849 {
+  padding: 48px 20px 64px !important;
+}
+
+.elementor-13 .elementor-element-8a89197 {
+  width: 100% !important;
+  max-width: 720px !important;
+  margin: 0 auto 36px !important;
+  text-align: center !important;
+  --container-widget-width: 100% !important;
+}
+
+.elementor-13 .elementor-element-8a89197 .elementor-heading-title {
+  font-family: "Rubik", sans-serif !important;
+  font-size: clamp(26px, 3.4vw, 36px) !important;
+  line-height: 1.25 !important;
+  letter-spacing: -0.02em !important;
+  color: #1a1f36 !important;
+  text-align: center !important;
+}
+
+.elementor-13 .elementor-element-39eb50f {
+  width: 100% !important;
+  max-width: 1100px !important;
+  margin: 0 auto !important;
+}
+
+.elementor-13 .elementor-element-39eb50f > .elementor-container {
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  gap: 16px !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  align-items: stretch !important;
+}
+
+.elementor-13 .elementor-element-39eb50f > .elementor-container > .elementor-column {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+}
+
+.elementor-13 .elementor-element-5b9deb3 > .elementor-element-populated,
+.elementor-13 .elementor-element-0ad4831 > .elementor-element-populated,
+.elementor-13 .elementor-element-47474f0 > .elementor-element-populated,
+.elementor-13 .elementor-element-de5dc0f > .elementor-element-populated {
+  margin: 0 !important;
+  padding: 28px 24px !important;
+  min-height: 148px !important;
+  border-radius: 18px !important;
+  background: #1a1f36 !important;
+  box-sizing: border-box !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  --e-column-margin-right: 0px !important;
+  --e-column-margin-left: 0px !important;
+}
+
+.elementor-13 .elementor-element-39eb50f .bdt-ep-advanced-counter {
+  width: 100% !important;
+  text-align: center !important;
+}
+
+.elementor-13 .elementor-element-39eb50f .bdt-ep-advanced-counter-content {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  width: 100% !important;
+}
+
+.elementor-13 .elementor-element-39eb50f .bdt-ep-advanced-counter-number {
+  margin: 0 !important;
+  color: #cbb6ff !important;
+  font-family: "Rubik", sans-serif !important;
+  font-size: clamp(32px, 3.2vw, 42px) !important;
+  font-weight: 600 !important;
+  line-height: 1 !important;
+  letter-spacing: -0.02em !important;
+}
+
+.elementor-13 .elementor-element-39eb50f .bdt-ep-advanced-counter-text {
+  margin: 0 !important;
+  max-width: 9.5em !important;
+  color: rgba(255, 255, 255, 0.72) !important;
+  font-family: "Rubik", sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  line-height: 1.35 !important;
+  text-align: center !important;
+}
+
 /* ========== LOVED BY FOUNDERS — even testimonial cards ========== */
 .elementor-13 .elementor-element-a79004f {
   overflow: visible !important;
@@ -856,6 +951,39 @@ html {
     line-clamp: 6 !important;
   }
 
+  .elementor-13 .elementor-element-13ed849 {
+    padding: 36px 16px 48px !important;
+  }
+
+  .elementor-13 .elementor-element-8a89197 {
+    margin-bottom: 24px !important;
+  }
+
+  .elementor-13 .elementor-element-39eb50f > .elementor-container {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+
+  .elementor-13 .elementor-element-5b9deb3 > .elementor-element-populated,
+  .elementor-13 .elementor-element-0ad4831 > .elementor-element-populated,
+  .elementor-13 .elementor-element-47474f0 > .elementor-element-populated,
+  .elementor-13 .elementor-element-de5dc0f > .elementor-element-populated {
+    min-height: 0 !important;
+    padding: 22px 20px !important;
+  }
+
+  .elementor-13 .elementor-element-39eb50f .bdt-ep-advanced-counter-content {
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    gap: 16px !important;
+    text-align: left !important;
+  }
+
+  .elementor-13 .elementor-element-39eb50f .bdt-ep-advanced-counter-text {
+    text-align: left !important;
+    max-width: none !important;
+  }
+
   /* Integrations: tighter spacing on phones */
   .elementor-13 .elementor-element-f6e3577 {
     padding: 40px 12px 36px !important;
@@ -901,5 +1029,10 @@ html {
 @media (min-width: 768px) and (max-width: 1024px) {
   .elementor-13 .elementor-element-7097c2f .swiper-wrapper {
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .elementor-13 .elementor-element-39eb50f > .elementor-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 14px !important;
   }
 }
