@@ -751,18 +751,31 @@ html {
   text-align: center !important;
 }
 
-/* CTA under results */
+/* CTA under results — fully centered */
 .elementor-13 .elementor-element-9aaa410 {
   padding: 24px 20px 80px !important;
 }
 
-.elementor-13 .elementor-element-4a24acc > .elementor-widget-wrap {
+.elementor-13 .elementor-element-9aaa410 > .elementor-container {
+  justify-content: center !important;
+}
+
+.elementor-13 .elementor-element-4a24acc {
+  width: 100% !important;
+  max-width: 920px !important;
+  margin: 0 auto !important;
+}
+
+.elementor-13 .elementor-element-4a24acc > .elementor-widget-wrap,
+.elementor-13 .elementor-element-4a24acc > .elementor-element-populated {
   display: flex !important;
   flex-direction: column !important;
+  flex-wrap: nowrap !important;
   align-items: center !important;
+  justify-content: center !important;
   text-align: center !important;
   gap: 0 !important;
-  padding: 48px 32px !important;
+  padding: 52px 36px !important;
   border-radius: 24px !important;
   background: linear-gradient(145deg, #794aff 0%, #5b35d6 100%) !important;
   box-shadow: 0 20px 48px rgba(121, 74, 255, 0.28) !important;
@@ -776,16 +789,25 @@ html {
 .elementor-13 .elementor-element-085167b,
 .elementor-13 .elementor-element-51fdd42,
 .elementor-13 .elementor-element-059c6cb {
+  align-self: center !important;
   width: 100% !important;
-  max-width: 560px !important;
+  max-width: 640px !important;
   margin-left: auto !important;
   margin-right: auto !important;
   --container-widget-width: 100% !important;
+  --container-widget-flex-grow: 0 !important;
   text-align: center !important;
 }
 
 .elementor-13 .elementor-element-085167b {
-  margin-bottom: 12px !important;
+  margin-bottom: 14px !important;
+}
+
+.elementor-13 .elementor-element-085167b .elementor-widget-container,
+.elementor-13 .elementor-element-085167b .elementor-heading-title {
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 .elementor-13 .elementor-element-085167b .elementor-heading-title {
@@ -793,11 +815,11 @@ html {
   font-size: clamp(26px, 3.4vw, 36px) !important;
   line-height: 1.25 !important;
   color: #ffffff !important;
-  text-align: center !important;
+  width: 100% !important;
 }
 
 .elementor-13 .elementor-element-51fdd42 {
-  margin-bottom: 24px !important;
+  margin-bottom: 8px !important;
 }
 
 .elementor-13 .elementor-element-51fdd42 .elementor-widget-container {
@@ -806,6 +828,20 @@ html {
   line-height: 1.55 !important;
   color: rgba(255, 255, 255, 0.88) !important;
   text-align: center !important;
+  padding: 0 0 24px !important;
+  margin: 0 auto !important;
+}
+
+.elementor-13 .elementor-element-059c6cb {
+  text-align: center !important;
+}
+
+.elementor-13 .elementor-element-059c6cb .elementor-widget-container,
+.elementor-13 .elementor-element-059c6cb .elementor-button-wrapper {
+  text-align: center !important;
+  display: flex !important;
+  justify-content: center !important;
+  width: 100% !important;
 }
 
 .elementor-13 .elementor-element-059c6cb .elementor-button {
@@ -815,6 +851,7 @@ html {
   padding: 14px 28px !important;
   font-weight: 600 !important;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12) !important;
+  margin: 0 auto !important;
 }
 
 .elementor-13 .elementor-element-059c6cb .elementor-button:hover {
