@@ -27,3 +27,50 @@
   visibility: visible !important;
   opacity: 1 !important;
 }
+
+@media (max-width: 767px) {
+  .elementor-13 .elementor-section > .elementor-container {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .elementor-13 .elementor-heading-title {
+    word-break: break-word;
+  }
+
+  .elementor-13 .elementor-element.elementor-absolute {
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: auto !important;
+    transform: none !important;
+    margin: 8px auto !important;
+  }
+
+  .elementor-13 .bdt-newsletter-wrapper,
+  .elementor-13 .bdt-mailchimp {
+    width: 100% !important;
+  }
+
+  .elementor-13 .bdt-newsletter-input-wrapper,
+  .elementor-13 .bdt-newsletter-signup-wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .elementor-13 .bdt-newsletter-wrapper input.bdt-input,
+  .elementor-13 .bdt-newsletter-btn {
+    width: 100% !important;
+  }
+
+  .elementor-13 .elementor-column.elementor-col-50,
+  .elementor-13 .elementor-column.elementor-col-33 {
+    width: 100% !important;
+  }
+
+  .elementor-13 img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+}

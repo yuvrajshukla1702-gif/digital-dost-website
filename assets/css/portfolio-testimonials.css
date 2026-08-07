@@ -261,16 +261,31 @@
 @media (max-width: 767px) {
   .dd-portfolio-section,
   .dd-reviews-section {
-    padding: 60px 0;
+    padding: 48px 16px !important;
   }
 
   .dd-portfolio-grid,
   .dd-reviews-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+    padding: 0 4px;
   }
 
   .dd-portfolio-section .elementor-widget__width-initial,
   .dd-reviews-section .elementor-widget__width-initial {
-    margin-bottom: 32px;
+    margin-bottom: 28px;
+    padding: 0 8px;
+  }
+
+  .dd-section-badge > .elementor-widget-container {
+    margin-top: -16px;
+  }
+
+  .dd-portfolio-media {
+    height: 180px;
+  }
+
+  .dd-review-card .quote {
+    font-size: 15px;
   }
 }

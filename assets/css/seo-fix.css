@@ -637,25 +637,72 @@ html {
   }
 
   .elementor-13 .elementor-element-178ede5 {
-    padding: 24px 16px 36px !important;
+    padding: 28px 16px 36px !important;
+  }
+
+  .elementor-13 .elementor-element-178ede5::before {
+    margin-bottom: 18px;
+  }
+
+  .elementor-13 .elementor-element-6b03bbd {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+  }
+
+  .elementor-13 .elementor-element-6b03bbd > .elementor-widget-container,
+  .elementor-13 .elementor-element-6b03bbd > .elementor-widget-container > div,
+  .elementor-13 .elementor-element-6b03bbd .bdt-slider,
+  .elementor-13 .elementor-element-6b03bbd .bdt-slider-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+    transform: none !important;
   }
 
   .elementor-13 .elementor-element-6b03bbd .bdt-logo-carousel-wrapper.bdt-grid {
-    flex-wrap: wrap !important;
-    gap: 16px 28px !important;
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 14px 10px !important;
     width: 100% !important;
-    max-width: 420px !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding: 14px 12px !important;
+    flex-wrap: unset !important;
     justify-content: center !important;
-    padding: 16px 18px !important;
+    justify-items: center !important;
+    align-items: center !important;
+    box-sizing: border-box !important;
+    transform: none !important;
+    left: 0 !important;
+    right: 0 !important;
+  }
+
+  .elementor-13 .elementor-element-6b03bbd .bdt-logo-carousel-wrapper.bdt-grid > * {
+    width: auto !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    left: auto !important;
+    right: auto !important;
+    position: relative !important;
+    transform: none !important;
+    display: flex !important;
+    justify-content: center !important;
   }
 
   .elementor-13 .elementor-element-6b03bbd .bdt-logo-carousel-img {
-    height: 32px !important;
-    max-width: 100px !important;
+    height: 28px !important;
+    max-width: 88px !important;
+    width: auto !important;
   }
 
   .elementor-13 .elementor-element-a79004f {
     padding: 56px 16px 48px !important;
+  }
+
+  .elementor-13 .elementor-element-7097c2f {
+    max-width: 100% !important;
+    padding: 0 !important;
   }
 
   .elementor-13 .elementor-element-7097c2f .swiper-wrapper {
@@ -666,6 +713,73 @@ html {
   .elementor-13 .elementor-element-7097c2f .bdt-ep-review-card-carousel-text {
     -webkit-line-clamp: 6 !important;
     line-clamp: 6 !important;
+  }
+
+  /* Integrations: stop absolute chaos on phones */
+  .elementor-13 .elementor-element-f6e3577 {
+    padding: 48px 16px 40px !important;
+  }
+
+  .elementor-13 .elementor-element-f6e3577 .elementor-absolute {
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: auto !important;
+    transform: none !important;
+    width: auto !important;
+    margin: 0 !important;
+  }
+
+  .elementor-13 .elementor-element-de50902 > .elementor-widget-wrap {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 8px !important;
+  }
+
+  /* Hide orbiting brand icons; keep copy + CTA + center logo */
+  .elementor-13 .elementor-element-189dd41,
+  .elementor-13 .elementor-element-bb7b18a,
+  .elementor-13 .elementor-element-1fca3dd,
+  .elementor-13 .elementor-element-f944f94,
+  .elementor-13 .elementor-element-e39368b,
+  .elementor-13 .elementor-element-c981cca {
+    display: none !important;
+  }
+
+  .elementor-13 .elementor-element-c26f654 {
+    position: relative !important;
+    inset: auto !important;
+    width: 96px !important;
+    max-width: 96px !important;
+    margin: 18px auto 0 !important;
+    order: 40;
+  }
+
+  .elementor-13 .elementor-element-c26f654 .elementor-widget-container {
+    width: 96px !important;
+    height: 96px !important;
+  }
+
+  .elementor-13 .elementor-element-c26f654 img {
+    width: 60px !important;
+    max-width: 60px !important;
+  }
+
+  /* Hero breathing room */
+  .elementor-13 .elementor-element-8f56b0c {
+    padding: 96px 16px 28px !important;
+  }
+
+  .elementor-13 .elementor-element-13c2e00 {
+    text-align: center !important;
+  }
+
+  .elementor-13 .elementor-element-13c2e00 .elementor-button-wrapper {
+    display: flex !important;
+    justify-content: center !important;
   }
 }
 

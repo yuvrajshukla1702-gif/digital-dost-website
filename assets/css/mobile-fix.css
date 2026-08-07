@@ -1,0 +1,162 @@
+/* Global smartphone polish for Digital Dost */
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+img,
+video,
+svg,
+iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Soften sticky floating social rail on phones */
+@media (max-width: 1024px) {
+  .ui-link-helper {
+    display: none !important;
+  }
+}
+
+@media (max-width: 767px) {
+  html,
+  body {
+    overflow-x: hidden !important;
+  }
+
+  #uicore-page,
+  .uicore-body-content,
+  .elementor,
+  .elementor-section,
+  .elementor-container,
+  .elementor-widget-wrap {
+    max-width: 100% !important;
+  }
+
+  .elementor-section.elementor-section-boxed > .elementor-container {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  /* Header breathing room */
+  .uicore-navbar .uicore-header-wrapper,
+  .uicore-navbar > .uicore.elementor-container {
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+  }
+
+  .uicore-navbar .uicore-ham {
+    margin-right: 4px !important;
+  }
+
+  /* Prevent absolute widgets from escaping the screen */
+  .elementor-element.elementor-absolute {
+    max-width: calc(100vw - 24px) !important;
+  }
+
+  /* Headings / copy */
+  .elementor-heading-title {
+    word-wrap: break-word;
+    overflow-wrap: anywhere;
+  }
+
+  h1.elementor-heading-title,
+  .elementor-widget-heading h1.elementor-heading-title {
+    font-size: clamp(26px, 7.2vw, 34px) !important;
+    line-height: 1.2 !important;
+  }
+
+  h2.elementor-heading-title {
+    font-size: clamp(22px, 6vw, 30px) !important;
+    line-height: 1.25 !important;
+  }
+
+  /* Homepage hero */
+  .elementor-element-10bbde1 {
+    overflow: hidden !important;
+  }
+
+  .elementor-element-cf59364,
+  .elementor-element-cf59364 .elementor-heading-title {
+    max-width: 100% !important;
+  }
+
+  .elementor-element-cf59364 .elementor-heading-title {
+    font-size: clamp(28px, 8vw, 36px) !important;
+    line-height: 1.18 !important;
+  }
+
+  /* Buttons full-width friendly */
+  .elementor-button-wrapper {
+    text-align: center !important;
+  }
+
+  .elementor-button {
+    max-width: 100% !important;
+  }
+
+  /* Newsletter / forms */
+  .bdt-newsletter-wrapper,
+  .bdt-mailchimp,
+  .bdt-grid.bdt-flex-middle {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .bdt-newsletter-input-wrapper,
+  .bdt-newsletter-signup-wrapper,
+  .bdt-newsletter-wrapper .bdt-width-expand,
+  .bdt-newsletter-wrapper .bdt-width-auto {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 1 1 100% !important;
+  }
+
+  .bdt-newsletter-wrapper input.bdt-input,
+  .bdt-newsletter-btn {
+    width: 100% !important;
+  }
+
+  /* Footer stacks cleaner */
+  .elementor-section[data-element_type="section"] .elementor-column.elementor-col-25,
+  .elementor-section[data-element_type="section"] .elementor-column.elementor-col-33,
+  .elementor-section[data-element_type="section"] .elementor-column.elementor-col-50 {
+    width: 100% !important;
+  }
+
+  /* Popup newsletter on phones */
+  .ui-popup-wrapper .ui-popup {
+    width: calc(100vw - 24px) !important;
+    max-width: 420px !important;
+    margin: 12px !important;
+    border-radius: 16px !important;
+    overflow: auto !important;
+    max-height: min(88vh, 720px) !important;
+  }
+
+  .ui-popup-wrapper .elementor-column {
+    width: 100% !important;
+  }
+
+  .ui-popup-close {
+    right: 8px !important;
+    top: 8px !important;
+  }
+
+  /* Back to top — keep clear of edges */
+  .uicore-back-to-top {
+    right: 14px !important;
+    bottom: 18px !important;
+  }
+
+  /* Carousel/sliders shouldn't force horizontal page scroll */
+  .swiper,
+  .swiper-carousel,
+  .bdt-carousel,
+  .bdt-review-card-carousel {
+    max-width: 100% !important;
+    overflow: hidden !important;
+  }
+}
