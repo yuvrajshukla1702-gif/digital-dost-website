@@ -468,7 +468,7 @@ html {
   display: none !important;
 }
 
-/* Equal service cards — always show descriptions */
+/* Services list — accordion + scroll so all 4 items stay reachable */
 .elementor-13 .elementor-element-e023272 {
   width: 100% !important;
 }
@@ -482,17 +482,31 @@ html {
 }
 
 .elementor-13 .elementor-element-e023272 .bdt-tab-wrapper > div {
-  background: transparent !important;
-  border-radius: 0 !important;
-  overflow: visible !important;
-  padding: 0 !important;
+  background: #f6f5fb !important;
+  border-radius: 18px !important;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  max-height: min(480px, 70vh) !important;
+  padding: 14px !important;
   box-shadow: none !important;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: #cbb6ff transparent;
+}
+
+.elementor-13 .elementor-element-e023272 .bdt-tab-wrapper > div::-webkit-scrollbar {
+  width: 6px;
+}
+
+.elementor-13 .elementor-element-e023272 .bdt-tab-wrapper > div::-webkit-scrollbar-thumb {
+  background: #cbb6ff;
+  border-radius: 999px;
 }
 
 .elementor-13 .elementor-element-e023272 .bdt-tab {
   display: flex !important;
   flex-direction: column !important;
-  gap: 12px !important;
+  gap: 10px !important;
   width: 100% !important;
 }
 
@@ -504,30 +518,33 @@ html {
 .elementor-13 .elementor-element-e023272 .bdt-tab .bdt-tabs-item-title {
   display: flex !important;
   flex-direction: column !important;
-  justify-content: flex-start !important;
+  justify-content: center !important;
   width: 100% !important;
   box-sizing: border-box !important;
-  min-height: 128px !important;
-  padding: 18px 18px 16px !important;
-  background: #ffffff !important;
-  border: 1px solid rgba(121, 74, 255, 0.12) !important;
-  border-radius: 16px !important;
-  box-shadow: 0 8px 22px rgba(26, 31, 54, 0.04) !important;
+  min-height: 0 !important;
+  padding: 16px 16px !important;
+  background: transparent !important;
+  border: 1px solid transparent !important;
+  border-radius: 14px !important;
+  box-shadow: none !important;
   color: #1a1f36 !important;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease !important;
+  transition: background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease !important;
 }
 
 .elementor-13 .elementor-element-e023272 .bdt-tab .bdt-tabs-item.bdt-active .bdt-tabs-item-title {
   background: #ffffff !important;
-  border-color: rgba(121, 74, 255, 0.45) !important;
-  box-shadow: 0 12px 28px rgba(121, 74, 255, 0.12) !important;
-  transform: translateY(-1px) !important;
+  border-color: rgba(121, 74, 255, 0.28) !important;
+  box-shadow: 0 10px 24px rgba(121, 74, 255, 0.1) !important;
 }
 
 .elementor-13 .elementor-element-e023272 .bdt-tab-title-icon-wrapper {
   display: flex !important;
   align-items: center !important;
   gap: 10px !important;
+  margin-bottom: 0 !important;
+}
+
+.elementor-13 .elementor-element-e023272 .bdt-tabs-item.bdt-active .bdt-tab-title-icon-wrapper {
   margin-bottom: 8px !important;
 }
 
@@ -545,20 +562,28 @@ html {
   font-size: 18px !important;
 }
 
-.elementor-13 .elementor-element-e023272 .bdt-tab .bdt-tab-sub-title,
-.elementor-13 .elementor-element-e023272 .bdt-tab .bdt-tabs-item.bdt-active .bdt-tab-sub-title {
+/* Collapse inactive descriptions; expand the active one */
+.elementor-13 .elementor-element-e023272 .bdt-tab .bdt-tab-sub-title {
   display: block !important;
+  max-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  opacity: 0 !important;
+  overflow: hidden !important;
+  visibility: hidden !important;
   color: #6f7589 !important;
   font-family: "Rubik", sans-serif !important;
   font-size: 14px !important;
   font-weight: 400 !important;
   line-height: 1.55 !important;
+  transition: max-height 0.25s ease, opacity 0.2s ease, margin 0.2s ease !important;
+}
+
+.elementor-13 .elementor-element-e023272 .bdt-tab .bdt-tabs-item.bdt-active .bdt-tab-sub-title {
+  max-height: 120px !important;
   opacity: 1 !important;
   visibility: visible !important;
-  max-height: none !important;
-  height: auto !important;
-  overflow: visible !important;
-  margin: 0 !important;
+  margin-top: 2px !important;
 }
 
 .elementor-13 .elementor-element-e023272 .bdt-switcher-wrapper {
