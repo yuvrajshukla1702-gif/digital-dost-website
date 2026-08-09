@@ -198,7 +198,7 @@
 		media="all" />
 	<link rel="stylesheet" href="../assets/css/site-logo.css" media="all" />
 	<link rel="stylesheet" href="/assets/css/mobile-fix.css?v=3" media="all" />
-	<link rel="stylesheet" href="/assets/css/seo-fix.css?v=30" media="all" />
+	<link rel="stylesheet" href="/assets/css/seo-fix.css?v=34" media="all" />
 	<link rel="stylesheet" id="google-fonts-1-css"
 		href="https://fonts.googleapis.com/css?family=Rubik%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;display=swap&amp;ver=6.4.2"
 		media="all" />
@@ -841,7 +841,7 @@
 																			width="1036" height="896"
 																			src="/SEO/wp-content/uploads/sites/3/2023/03/SEO-Agency-Services-Image-1.png"
 																			class="attachment-full size-full wp-image-113"
-																			alt
+																			alt="Keyword research dashboard showing search terms, mentions, and engagement"
 																			sizes="(max-width: 1036px) 100vw, 1036px" />
 																	</div>
 																</div>
@@ -864,7 +864,7 @@
 																			width="1036" height="895"
 																			src="/SEO/wp-content/uploads/sites/3/2023/03/SEO-Agency-Services-Image-2.png"
 																			class="attachment-full size-full wp-image-114"
-																			alt="wp-content/uploads/sites/3/2023/03/SEO-Agency-Services-Image-2.webp"
+																			alt="Content planning overview with search volume, mentions, and modelled traffic"
 																			sizes="(max-width: 1036px) 100vw, 1036px" />
 																	</div>
 																</div>
@@ -887,7 +887,7 @@
 																			width="1036" height="895"
 																			src="/SEO/wp-content/uploads/sites/3/2023/03/SEO-Agency-Services-Image-3.png"
 																			class="attachment-full size-full wp-image-115"
-																			alt="wp-content/uploads/sites/3/2023/03/SEO-Agency-Services-Image-3.webp"
+																			alt="Site optimization health score and performance growth chart"
 																			sizes="(max-width: 1036px) 100vw, 1036px" />
 																	</div>
 																</div>
@@ -910,7 +910,7 @@
 																			width="1036" height="895"
 																			src="/SEO/wp-content/uploads/sites/3/2023/03/SEO-Agency-Services-Image-4.png"
 																			class="attachment-full size-full wp-image-116"
-																			alt="wp-content/uploads/sites/3/2023/03/SEO-Agency-Services-Image-4.webp"
+																			alt="Keyword rankings by location with first-page market share"
 																			sizes="(max-width: 1036px) 100vw, 1036px" />
 																	</div>
 																</div>
@@ -922,6 +922,76 @@
 										</div>
 									</div>
 								</div>
+								<script>
+									(function () {
+										var labels = [
+											"Keyword Research",
+											"Content Planning",
+											"Site Optimization",
+											"Keyword Rankings"
+										];
+										var ids = ["Keyword", "Content", "Site", "Rankings"];
+
+										function getStage() {
+											return document.querySelector(".elementor-element-2d7878b > .elementor-widget-wrap");
+										}
+
+										function getVisuals() {
+											var stage = getStage();
+											if (!stage) return [];
+											return Array.prototype.slice.call(stage.querySelectorAll(".elementor-inner-section"));
+										}
+
+										function showServiceVisual(index) {
+											var stage = getStage();
+											var visuals = getVisuals();
+											if (!stage || !visuals.length) return;
+											var i = Math.max(0, Math.min(index, visuals.length - 1));
+											visuals.forEach(function (sec, idx) {
+												var on = idx === i || sec.id === ids[i];
+												sec.classList.toggle("dd-service-visual-active", on);
+												if (on) {
+													sec.classList.add("bdt-active", "uk-active");
+													sec.removeAttribute("hidden");
+													sec.style.display = "";
+												} else {
+													sec.classList.remove("bdt-active", "uk-active");
+												}
+											});
+											stage.setAttribute("data-label", labels[i] || "");
+										}
+
+										function activeIndex() {
+											var tabs = document.querySelectorAll("#bdt-tabs-e023272 .bdt-tabs-item");
+											for (var i = 0; i < tabs.length; i++) {
+												if (tabs[i].classList.contains("bdt-active") || tabs[i].classList.contains("uk-active")) {
+													return i;
+												}
+											}
+											return 0;
+										}
+
+										function bind() {
+											var tabs = document.querySelectorAll("#bdt-tabs-e023272 .bdt-tabs-item");
+											tabs.forEach(function (tab, i) {
+												tab.addEventListener("click", function () {
+													window.setTimeout(function () { showServiceVisual(i); }, 30);
+												});
+											});
+											showServiceVisual(activeIndex());
+										}
+
+										if (document.readyState === "loading") {
+											document.addEventListener("DOMContentLoaded", function () {
+												bind();
+												window.setTimeout(function () { showServiceVisual(activeIndex()); }, 500);
+											});
+										} else {
+											bind();
+											window.setTimeout(function () { showServiceVisual(activeIndex()); }, 500);
+										}
+									})();
+								</script>
 								<div class="elementor-section elementor-top-section elementor-element elementor-element-27965dc elementor-section-boxed elementor-section-height-default elementor-section-height-default"
 									data-id="27965dc" data-element_type="section">
 									<div class="elementor-container elementor-column-gap-default">
