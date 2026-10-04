@@ -166,19 +166,10 @@
 
 		.digi-logo-footer img { width: 160px; height: auto; object-fit: contain; }
 
-		.dd-certs { padding: 72px 24px 88px; background: #f7f5f2; }
-		.dd-certs-inner { max-width: 1100px; margin: 0 auto; }
-		.dd-certs-kicker { margin: 0 0 8px; letter-spacing: 0.14em; text-transform: uppercase; font-size: 13px; color: #794AFF; }
-		.dd-certs h2 { margin: 0 0 28px; font-size: 36px; line-height: 1.2; color: #161616; }
-		.dd-certs-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: start; }
-		.dd-certs figure { margin: 0; height: auto; align-self: start; background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(22,22,22,0.08); }
-		.dd-certs img { display: block; width: 100%; height: auto; background: #fff; }
-		.dd-certs figcaption { padding: 14px 16px 16px; font-size: 15px; line-height: 1.4; color: #161616; }
-		@media (max-width: 800px) {
-			.dd-certs { padding: 48px 16px 64px; }
-			.dd-certs h2 { font-size: 28px; }
-			.dd-certs-grid { grid-template-columns: 1fr; }
-		}
+		.dd-certs { display: flex; flex-wrap: wrap; gap: 18px; align-items: center; padding: 8px 0 28px; }
+		.dd-certs a { display: flex; align-items: center; gap: 12px; width: 280px; max-width: 100%; text-decoration: none; color: #161616; }
+		.dd-certs img { width: 92px !important; height: 68px !important; max-width: 92px !important; object-fit: cover; object-position: top center; border-radius: 6px; border: 1px solid #e4e0da; background: #fff; flex: 0 0 auto; }
+		.dd-certs span { font-size: 14px; line-height: 1.35; }
 	</style>
 	<link rel="stylesheet" id="cute-alert-css" href="css/style.css" media="all">
 	<link rel="stylesheet" id="text-editor-style-css" href="css/text-editor.css" media="all">
@@ -727,6 +718,16 @@
 															srcset="images/Pages-About-Us-Founded-Image.webp 1500w, images/Pages-About-Us-Founded-Image-300x136.webp 300w, images/Pages-About-Us-Founded-Image-1024x464.webp 1024w, images/Pages-About-Us-Founded-Image-768x348.webp 768w, images/Pages-About-Us-Founded-Image-650x295.webp 650w"
 															sizes="(max-width: 1500px) 100vw, 1500px">
 													</div>
+												</div>
+												<div class="dd-certs" aria-label="Recognitions">
+													<a href="images/dpiit-dipp281771.jpg">
+														<img src="images/dpiit-dipp281771.jpg" alt="DPIIT certificate of recognition, DIPP281771" width="1684" height="1190">
+														<span>DPIIT - DIPP281771</span>
+													</a>
+													<a href="images/up-startup-certificate.jpg">
+														<img src="images/up-startup-certificate.jpg" alt="UP Startup certificate, R/STARTUP/UP/LKO/2026/000045894" width="1191" height="1684">
+														<span>UP Startup - R/STARTUP/UP/LKO/2026/000045894</span>
+													</a>
 												</div>
 											</div>
 										</div>
@@ -1306,26 +1307,6 @@
 									</div>
 								</section>
 							</div>
-							<section class="dd-certs" aria-label="Recognitions">
-								<div class="dd-certs-inner">
-									<p class="dd-certs-kicker">Recognitions</p>
-									<h2>Registered and recognised</h2>
-									<div class="dd-certs-grid">
-										<figure>
-											<a href="images/dpiit-dipp281771.jpg">
-												<img src="images/dpiit-dipp281771.jpg" alt="DPIIT certificate of recognition for Digital Dost AJ LLP, certificate number DIPP281771" width="1684" height="1190">
-											</a>
-											<figcaption>DPIIT - DIPP281771</figcaption>
-										</figure>
-										<figure>
-											<a href="images/up-startup-certificate.jpg">
-												<img src="images/up-startup-certificate.jpg" alt="UP Startup certificate for Digital Dost AJ LLP, registration number R/STARTUP/UP/LKO/2026/000045894" width="1191" height="1684">
-											</a>
-											<figcaption>UP Startup - R/STARTUP/UP/LKO/2026/000045894</figcaption>
-										</figure>
-									</div>
-								</div>
-							</section>
 						</main>
 					</article>
 				</div>
